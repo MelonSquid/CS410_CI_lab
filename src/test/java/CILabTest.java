@@ -32,5 +32,11 @@ public class CILabTest {
         assertFalse(myString.detectCapitalUse());
     }
 
+    //tests all caps and only leading letter capped
+    @Test
+    public void detectCapitalUseTest3() {
+        myString.setString("HAVE YOU tried SETTING IT To wumbo?");
+        assertTrue(myString.detectCapitalUse());
+    }
 
 }
