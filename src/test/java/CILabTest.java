@@ -21,14 +21,14 @@ public class CILabTest {
     //general use case -- true expected
     @Test
     public void detectCapitalUseTest1() {
-        myString.setString("This is the first test String.");
+        myString.setString("Have you tried setting it to Wumbo?");
         assertTrue(myString.detectCapitalUse());
     }
 
     //general use case -- false expected
     @Test
     public void detectCapitalUseTest2() {
-        myString.setString("This is the second TEst String.");
+        myString.setString("HaVe yOu TrIeD sEtTiNg It To WuMbO?");
         assertFalse(myString.detectCapitalUse());
     }
 
